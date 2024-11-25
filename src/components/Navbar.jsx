@@ -35,7 +35,7 @@ const Navbar = () => {
                     {/* Idioma e Inicio de sesión */}
                     <div className="space-x-12 hidden md:flex items-center">
                         <a className="hidden lg:flex items-center hover:text-tartiary" onClick={() => window.open("https://maps.app.goo.gl/iBWaVR1TRoDHu7ko7", "_blank")}><GrLanguage className="mr-2"/><span>Dirección</span></a>
-                        <button className="bg-orange text-white py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-primary flex items-center" onClick={() => window.open("https://api.whatsapp.com/message/OZAE3PLM7HY7H1", "_blank")}><FaWhatsapp className="text-white inline-block ml-0.5 text-2xl lg:text-2xl mr-2" />Contáctanos</button>
+                        <button className="bg-orange text-white py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-primary flex items-center" onClick={() => window.open("wa.me/+584146611188", "_blank")}><FaWhatsapp className="text-white inline-block ml-0.5 text-2xl lg:text-2xl mr-2" />Contáctanos</button>
                     </div>
                     {/* Menú Hamburguesa */}
                     <div className="md:hidden">
