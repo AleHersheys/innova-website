@@ -1,4 +1,6 @@
 import { useState } from "react";
+import greenIcon from "../assets/green.png"; 
+import redIcon from "../assets/red.png";
 
 const Pricing = () => {
     const [isYearly, setISYearly] = useState(false);
@@ -96,7 +98,7 @@ const Pricing = () => {
                             {
                                 pkg.features.map((feature, idx) => 
                                     <li key={idx} className="flex gap-3 items-center">
-                                        <img src={feature.available ? "/src/assets/green-icon.png" : "/src/assets/red-icon.png"} alt="" className="w-4 h-4"/>
+                                        <img src={feature.available ? greenIcon : redIcon} alt="" className="w-4 h-4"/>
                                         {feature.feature}
                                     </li>
                                 )
