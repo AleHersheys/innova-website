@@ -31,7 +31,7 @@ const Banner = ({ banner, heading, subheading, btn1, btn2 }) => {
                     <p className="text-white text-2xl mb-8">{subheading}</p>
                     <div className="flex flex-col md:flex-row items-center space-y-4 md:space-x-5 md:space-y-0">
                         <button className="btnPrimary" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>{btn1}</button>
-                        <button className="btnPrimary" onClick={() => window.open("../innova-terms-and-conditions/index.html", "_blank")}>{btn2}</button>
+                        <button className="btnPrimary" onClick={() => window.location.href = "/innova-terms-and-conditions/index.html"}>{btn2}</button>
                     </div>
                 </motion.div>
             </div>
