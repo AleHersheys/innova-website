@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/terms-and-conditions", "destination": "/innova-terms-and-conditions/index.html" }
-    ]
-}  
