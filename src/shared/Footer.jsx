@@ -37,7 +37,7 @@ const Footer = () => {
                             <h4 className="text-xl">Ayuda</h4>
                             <ul className="space-y-3">
                                 <a className="block hover:text-gray-300" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>Innova Help Desk</a>
-                                <a className="block hover:text-gray-300" onClick={() => window.location.href = "/terms-and-conditions/index.html"}>Términos y condiciones</a>
+                                <a className="block hover:text-gray-300" onClick={() => window.open("https://www.innovaprosystem.com/terms-and-conditions/index.html", "_blank")}>Términos y condiciones</a>
                                 <a className="block hover:text-gray-300" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E", "_blank")}>Manuales de Uso</a>
                             </ul>
                         </div>
