@@ -54,7 +54,7 @@ const Footer = () => {
                                     <a href="tel:+584146611188" onClick={(e) => { if (!window.confirm('¿Desea llamar a este número?')) e.preventDefault(); }}>Soporte: +58 414-6611188</a>
                                 </li>
                                 <li className="hover:text-gray-300">
-                                    <a href="mailto:disoinzuca@gmail.com">Email: disoinzuca@gmail.com</a>
+                                    <a href="mailto:info@innovaprosystem.com">Email: info@innovaprosystem.com</a>
                                 </li>
                             </ul>
                         </div>
