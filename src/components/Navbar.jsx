@@ -17,8 +17,8 @@ const Navbar = () => {
         { link: "Inicio", path: "home" },
         { link: "Sobre nosotros", path: "about" },
         { link: "Productos", path: "products" },
-        { link: "Precios", path: "prices" },
-        // { link: "Contactos", path: "contact" },
+        //  { link: "Precios", path: "prices" },
+        { link: "Contactos", path: "contact" },
     ];
 
     return (
