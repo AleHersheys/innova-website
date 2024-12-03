@@ -1,6 +1,6 @@
 import { useState } from "react"; 
 import logo from "../assets/innova-logo.png"; 
-import { GrLanguage } from "react-icons/gr"; 
+import { SiGooglemaps } from "react-icons/si";
 import { IoMenuSharp } from "react-icons/io5"; 
 import { FaXmark } from "react-icons/fa6"; 
 import { Link } from "react-scroll"; 
@@ -16,8 +16,9 @@ const Navbar = () => {
     const navItems = [
         { link: "Inicio", path: "home" },
         { link: "Sobre nosotros", path: "about" },
-        // { link: "Precios", path: "prices" },
-        { link: "Contactos", path: "contact" },
+        { link: "Productos", path: "products" },
+        { link: "Precios", path: "prices" },
+        // { link: "Contactos", path: "contact" },
     ];
 
     return (
@@ -47,13 +48,13 @@ const Navbar = () => {
                         </ul>
                     </div>
                     {/* Idioma e Inicio de sesión */}
-                    <div className="space-x-12 hidden md:flex items-center">
+                    <div className="space-x-12 hidden md:flex items-center cursor-pointer">
                         <a 
                             className="hidden lg:flex items-center hover:text-tartiary" 
                             onClick={() => window.open("https://maps.app.goo.gl/iBWaVR1TRoDHu7ko7", "_blank")}
                         >
-                            <GrLanguage className="mr-2"/>
-                            <span>Dirección</span>
+                            <SiGooglemaps className="mr-2"/>
+                            <span>Ubicación</span>
                         </a>
                         <button 
                             className="bg-orange text-white py-2 px-4 transition-all duration-300 rounded hover:text-white hover:bg-primary flex items-center" 

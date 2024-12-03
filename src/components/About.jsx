@@ -55,8 +55,7 @@ const About = () => {
                     viewport={{ once: true, amount: 0.7 }}
                 >
                     <h2 className="md:text-5xl text-3xl font-bold text-primary mb-5 leading-normal">¡Descarga las demos de nuestros sistemas!</h2>
-                    <p className="text-tartiary text-lg mb-7">Siéntase libre de probar los sistemas de Innova en sus versiones más actualizadas. Consulte los manuales de uso que vienen incluidos en la descarga.</p>
-                    <button className="btnPrimary" onClick={() => window.open("https://drive.google.com/drive/folders/1GfB1Hd1ytqpP-nLXAY5qNONxWafKiFo4?usp=sharing", "_blank")}>Descargar Demos</button>
+                    <p className="text-tartiary text-lg mb-7">Siéntase libre de probar los sistemas de Innova en sus versiones más actualizadas. Consulte los Manuales de Uso que vienen incluidos en la descarga de las demos.</p>
                 </motion.div>
             </div>
         </div>

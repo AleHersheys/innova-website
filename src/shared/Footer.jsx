@@ -28,17 +28,18 @@ const Footer = () => {
                             <h4 className="text-xl">General</h4>
                             <ul className="space-y-3">
                                 <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Inicio</Link>
-                                <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300">Sobre nosotros</Link>
-                                <Link to="prices" smooth={true} duration={500} className="block hover:text-gray-300">Precios</Link>
-                                <a className="block hover:text-gray-300" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1GfB1Hd1ytqpP-nLXAY5qNONxWafKiFo4", "_blank")}>Demos</a>
+                                <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Sobre nosotros</Link>
+                                <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Productos</Link>
+                                {/* <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Precios</Link> */}
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
                             <h4 className="text-xl">Ayuda</h4>
                             <ul className="space-y-3">
-                                <a className="block hover:text-gray-300" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>Innova Help Desk</a>
-                                <a className="block hover:text-gray-300" onClick={() => window.open("https://www.innovaprosystem.com/terms-and-conditions/index.html", "_blank")}>Términos y condiciones</a>
-                                <a className="block hover:text-gray-300" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E", "_blank")}>Manuales de Uso</a>
+                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>Innova Help Desk</a>
+                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://www.innovaprosystem.com/terms-and-conditions/index.html", "_blank")}>Términos y condiciones</a>
+                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E", "_blank")}>Manuales de Uso</a>
+                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E", "_blank")}>Brochures</a>
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
