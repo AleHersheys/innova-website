@@ -33,18 +33,19 @@ const Navbar = () => {
                         {/* Mostrando navItems con .map() */}
                         <ul className="md:flex space-x-12 hidden">
                             {navItems.map(({ link, path }) => (
-                                <Link 
-                                    key={link} 
-                                    to={path} 
-                                    activeClass="active" 
-                                    spy={true} 
-                                    smooth={true} 
-                                    offset={-100} 
-                                    className="block hover:text-gray-300 cursor-pointer"
-                                    href={`#${path}`}
-                                >
-                                    {link}
-                                </Link>
+                                <li key={link}>
+                                    <Link 
+                                        to={path} 
+                                        activeClass="active" 
+                                        spy={true} 
+                                        smooth={true} 
+                                        offset={-100} 
+                                        className="block hover:text-gray-300 cursor-pointer"
+                                        href={`#${path}`}
+                                    >
+                                        {link}
+                                    </Link>
+                                </li>
                             ))}
                         </ul>
                     </div>
@@ -81,21 +82,24 @@ const Navbar = () => {
             </nav>
             {/* Ítems del Navbar para dispositivos móviles */}
             <div className={`space-y-4 px-4 pt-24 pb-5 bg-orange text-xl ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
-                {navItems.map(({ link, path }) => (
-                    <Link 
-                        key={link} 
-                        to={path} 
-                        activeClass="active" 
-                        spy={true} 
-                        smooth={true} 
-                        offset={-80} 
-                        className="block text-white hover:text-gray-300" 
-                        onClick={toggleMenu}
-                        href={`#${path}`}
-                    >
-                        {link}
-                    </Link>
-                ))}
+                <ul className="space-y-4">
+                    {navItems.map(({ link, path }) => (
+                        <li key={link}>
+                            <Link 
+                                to={path} 
+                                activeClass="active" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-80} 
+                                className="block text-white hover:text-gray-300" 
+                                onClick={toggleMenu}
+                                href={`#${path}`}
+                            >
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </>
     );

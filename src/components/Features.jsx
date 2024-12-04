@@ -28,19 +28,19 @@ const Features = () => {
                         <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 flex justify-center items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer">
                             <div className="text-center">
                                 <FaCode className="text-primary inline-block text-4xl lg:text-6xl mb-4" />
-                                <h5 className="text-2xl font-semibold text-primary px-5">Tecnología de punta</h5>
+                                <h4 className="text-2xl font-semibold text-primary px-5">Tecnología de punta</h4>
                             </div>
                         </div>
                         <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 flex justify-center items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer md:mt-16">
                             <div className="text-center">
                                 <MdOutlineSecurity className="text-primary inline-block text-4xl lg:text-6xl mb-4" />
-                                <h5 className="text-2xl font-semibold text-primary px-5">Seguridad informática</h5>
+                                <h4 className="text-2xl font-semibold text-primary px-5">Seguridad informática</h4>
                             </div>
                         </div>
                         <div className="bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-3xl p-8 flex justify-center items-center hover:-translate-y-4 transition-all duration-300 cursor-pointer">
                             <div className="text-center">
                                 <MdSupportAgent className="text-primary inline-block text-4xl lg:text-6xl mb-4" />
-                                <h5 className="text-2xl font-semibold text-primary px-5">Soporte instantáneo</h5>
+                                <h4 className="text-2xl font-semibold text-primary px-5">Soporte instantáneo</h4>
                             </div>
                         </div>
                     </div>

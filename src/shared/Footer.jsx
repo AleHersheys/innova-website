@@ -27,24 +27,38 @@ const Footer = () => {
                     {/* NAVEGACIÓN DEL FOOTER */}
                     <div className="md:w-1/2 flex flex-col md:flex-row flex-wrap justify-between gap-8 items-start">
                         <div className="space-y-4 mt-5">
-                            <h4 className="text-xl">General</h4>
+                            <h3 className="text-xl">General</h3>
                             <ul className="space-y-3">
-                                <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#home">Inicio</Link>
-                                <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#about">Sobre nosotros</Link>
-                                <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#products">Productos</Link>
-                                {/* <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#pricing">Precios</Link> */}
+                                <li>
+                                    <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#home">Inicio</Link>
+                                </li>
+                                <li>
+                                    <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#about">Sobre nosotros</Link>
+                                </li>
+                                <li>
+                                    <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#products">Productos</Link>
+                                </li>
+                                {/* <li>
+                                    <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#pricing">Precios</Link>
+                                </li> */}
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
-                            <h4 className="text-xl">Ayuda</h4>
+                            <h3 className="text-xl">Ayuda</h3>
                             <ul className="space-y-3">
-                                <a href="https://help.innovaprosystem.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Innova Help Desk</a>
-                                <a href="https://www.innovaprosystem.com/terms-and-conditions/index.html" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Términos y condiciones</a>
-                                <a href="https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Brochures</a>
+                                <li>
+                                    <a href="https://help.innovaprosystem.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Innova Help Desk</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.innovaprosystem.com/terms-and-conditions/index.html" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Brochures</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
-                            <h4 className="text-xl">Contactos</h4>
+                            <h3 className="text-xl">Contactos</h3>
                             <ul className="space-y-3">
                                 <li className="hover:text-gray-300">
                                     <a href="tel:+582614176501" onClick={(e) => { if (!window.confirm('¿Desea llamar a este número?')) e.preventDefault(); }}>Oficina: +58 261-4176501</a> 
