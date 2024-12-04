@@ -51,8 +51,10 @@ const Navbar = () => {
                     {/* Idioma e Inicio de sesión */}
                     <div className="space-x-12 hidden md:flex items-center cursor-pointer">
                         <a 
-                            className="hidden lg:flex items-center hover:text-tartiary" 
-                            onClick={() => window.open("https://maps.app.goo.gl/iBWaVR1TRoDHu7ko7", "_blank")}
+                            href="https://maps.app.goo.gl/iBWaVR1TRoDHu7ko7" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="hidden lg:flex items-center hover:text-tartiary"
                         >
                             <SiGooglemaps className="mr-2"/>
                             <span>Ubicación</span>

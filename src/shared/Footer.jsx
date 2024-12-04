@@ -12,9 +12,11 @@ const Footer = () => {
             <div className="md:px-14 p-4 max-w-screen-2xl mx-auto">
                 <div className="my-12 flex flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 space-y-8 text-center md:text-left">
-                        <a className="text-2xl font-semibold flex justify-center md:justify-start items-center space-x-3 text-primary">
-                            <img src={logo} alt="Innova Logo" className="w-10 inline-block" /><span className="text-white"></span>
-                            <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" /><span className="text-white"></span>
+                        <a href="/" className="text-2xl font-semibold flex justify-center md:justify-start items-center space-x-3 text-primary">
+                            <img src={logo} alt="Innova Logo" className="w-10 inline-block" />
+                            <span className="text-white"></span>
+                            <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" />
+                            <span className="text-white"></span>
                         </a>
                         <p className="md:w-1/2 mx-auto md:mx-0">Innovación en cada línea de código</p>
                         {/* <div>
@@ -36,9 +38,9 @@ const Footer = () => {
                         <div className="space-y-4 mt-5">
                             <h4 className="text-xl">Ayuda</h4>
                             <ul className="space-y-3">
-                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>Innova Help Desk</a>
-                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://www.innovaprosystem.com/terms-and-conditions/index.html", "_blank")}>Términos y condiciones</a>
-                                <a className="block hover:text-gray-300 cursor-pointer" onClick={() => window.open("https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E", "_blank")}>Brochures</a>
+                                <a href="https://help.innovaprosystem.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Innova Help Desk</a>
+                                <a href="https://www.innovaprosystem.com/terms-and-conditions/index.html" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Términos y condiciones</a>
+                                <a href="https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Brochures</a>
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
