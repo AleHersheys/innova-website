@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const Banner = ({ banner, heading, subheading , btn2 }) => {
+const Banner = ({ banner, heading, subheading, btn2 }) => {
     const [isInView, setIsInView] = useState(false);
 
     return (
@@ -16,7 +16,12 @@ const Banner = ({ banner, heading, subheading , btn2 }) => {
                     onViewportEnter={() => setIsInView(true)}
                     viewport={{ once: true, amount: 0.7 }}
                 >
-                    <img src={banner} alt="Banner" className="lg:h-[386px]" />
+                    <img 
+                        src={banner} 
+                        alt="Banner" 
+                        className="lg:h-[386px] object-cover" 
+                        style={{ width: "100%", height: "auto" }}
+                    />
                 </motion.div>
                 {/* CONTENIDO DEL BANNER */}
                 <motion.div 

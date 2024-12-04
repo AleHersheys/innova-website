@@ -16,7 +16,12 @@ const Banner = ({ banner, heading, subheading, btn1, btn2 }) => {
                     onViewportEnter={() => setIsInView(true)}
                     viewport={{ once: true, amount: 0.7 }}
                 >
-                    <img src={banner} alt="" className="lg:h-[386px]" />
+                    <img 
+                        src={banner} 
+                        alt="Banner 2" 
+                        className="lg:h-[386px] object-cover" 
+                        style={{ width: "100%", height: "auto" }}
+                    />
                 </motion.div>
                 {/* CONTENIDO DEL BANNER */}
                 <motion.div 
