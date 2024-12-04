@@ -1,5 +1,5 @@
 import Banner from "../shared/Banner-help";
-import BannerImg from "../assets/help.png";
+import BannerImg from "../assets/help.svg";
 import { FaWrench } from "react-icons/fa";
 
 const Newsletter = () => {

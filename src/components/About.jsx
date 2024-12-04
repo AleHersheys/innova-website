@@ -1,6 +1,6 @@
 import { useState } from "react";
-import aboutImg1 from "../assets/about-1.png";
-import aboutImg2 from "../assets/about-2.png";
+import aboutImg1 from "../assets/about-1.svg";
+import aboutImg2 from "../assets/about-2.svg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 

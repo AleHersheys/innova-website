@@ -1,4 +1,4 @@
-import banner from "../assets/banner.png";
+import banner from "../assets/banner.svg";
 import Banner from "../shared/Banner";
 import { FaLightbulb } from "react-icons/fa";
 
