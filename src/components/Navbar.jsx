@@ -17,7 +17,7 @@ const Navbar = () => {
         { link: "Inicio", path: "home" },
         { link: "Sobre nosotros", path: "about" },
         { link: "Productos", path: "products" },
-        //  { link: "Precios", path: "prices" },
+        // { link: "Precios", path: "prices" },
         { link: "Contactos", path: "contact" },
     ];
 
@@ -27,20 +27,21 @@ const Navbar = () => {
                 <div className="text-lg containter mx-auto flex justify-between items-center font-medium">
                     <div className="flex space-x-14 items-center">
                         <a href="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
-                            <img src={logo} alt="" className="w-10 inline-block items-center" />
+                            <img src={logo} alt="Innova Logo" className="w-10 inline-block items-center" />
                             <span>Innova ProSystem</span>
                         </a>
                         {/* Mostrando navItems con .map() */}
                         <ul className="md:flex space-x-12 hidden">
                             {navItems.map(({ link, path }) => (
                                 <Link 
+                                    key={link} 
+                                    to={path} 
                                     activeClass="active" 
                                     spy={true} 
                                     smooth={true} 
                                     offset={-100} 
-                                    key={link} 
-                                    to={path} 
                                     className="block hover:text-gray-300 cursor-pointer"
+                                    href={`#${path}`}
                                 >
                                     {link}
                                 </Link>
@@ -80,14 +81,15 @@ const Navbar = () => {
             <div className={`space-y-4 px-4 pt-24 pb-5 bg-orange text-xl ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                 {navItems.map(({ link, path }) => (
                     <Link 
+                        key={link} 
+                        to={path} 
                         activeClass="active" 
                         spy={true} 
                         smooth={true} 
                         offset={-80} 
-                        key={link} 
-                        to={path} 
                         className="block text-white hover:text-gray-300" 
                         onClick={toggleMenu}
+                        href={`#${path}`}
                     >
                         {link}
                     </Link>

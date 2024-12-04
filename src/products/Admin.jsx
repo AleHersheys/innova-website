@@ -45,7 +45,7 @@ const Products = () => {
               <span className="text-primary">Innova Admin 2.1</span>
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
-              <img src={admin} alt="Innova Admin 2.1" className="rounded-lg shadow-lg" />
+              <img src={admin} alt="Innova Admin 2.1 Screenshot" className="rounded-lg shadow-lg" />
             </div>
           </motion.div>
           {/* Contenido derecha */}
@@ -59,7 +59,7 @@ const Products = () => {
           >
             {/* Vector */}
             <div className="relative flex justify-center mb-3 lg:mb-10">
-              <img src={icon}/>
+              <img src={icon} alt="Innova Admin 2.1 Icon"/>
             </div>
             {/* Característica 1 */}
             <div className="flex items-start space-x-4 lg:mb-6">

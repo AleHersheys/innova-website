@@ -16,7 +16,7 @@ const Banner = ({ banner, heading, subheading , btn2 }) => {
                     onViewportEnter={() => setIsInView(true)}
                     viewport={{ once: true, amount: 0.7 }}
                 >
-                    <img src={banner} alt="" className="lg:h-[386px]" />
+                    <img src={banner} alt="Banner" className="lg:h-[386px]" />
                 </motion.div>
                 {/* CONTENIDO DEL BANNER */}
                 <motion.div 
@@ -30,7 +30,6 @@ const Banner = ({ banner, heading, subheading , btn2 }) => {
                     <h2 className="md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">{heading}</h2>
                     <p className="text-white text-2xl mb-8">{subheading}</p>
                     <div className="flex flex-col md:flex-row items-center space-y-4 md:space-x-5 md:space-y-0">
-                        {/* <button className="btnPrimary" onClick={() => window.open("https://food.innovaprosystem.com", "_blank")}>{btn1}</button>  */}
                         <button className="btnPrimary" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSePZNzs9EheXDmMAF51bdUESv2-3zR52259tbVtALLYqeEYFw/viewform", "_blank")}>{btn2}</button>
                     </div>
                 </motion.div>

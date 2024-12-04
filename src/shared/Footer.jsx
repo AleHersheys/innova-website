@@ -13,8 +13,8 @@ const Footer = () => {
                 <div className="my-12 flex flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 space-y-8 text-center md:text-left">
                         <a className="text-2xl font-semibold flex justify-center md:justify-start items-center space-x-3 text-primary">
-                            <img src={logo} alt="" className="w-10 inline-block" /><span className="text-white"></span>
-                            <img src={logotipo} alt="" className="w-28 inline-block" /><span className="text-white"></span>
+                            <img src={logo} alt="Innova Logo" className="w-10 inline-block" /><span className="text-white"></span>
+                            <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" /><span className="text-white"></span>
                         </a>
                         <p className="md:w-1/2 mx-auto md:mx-0">Innovación en cada línea de código</p>
                         {/* <div>
@@ -27,10 +27,10 @@ const Footer = () => {
                         <div className="space-y-4 mt-5">
                             <h4 className="text-xl">General</h4>
                             <ul className="space-y-3">
-                                <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Inicio</Link>
-                                <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Sobre nosotros</Link>
-                                <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Productos</Link>
-                                {/* <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer">Precios</Link> */}
+                                <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#home">Inicio</Link>
+                                <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#about">Sobre nosotros</Link>
+                                <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#products">Productos</Link>
+                                {/* <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#pricing">Precios</Link> */}
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">

@@ -45,7 +45,7 @@ const Products = () => {
               <span className="text-[#A2B209]">Innova Food & Drinks</span>
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
-              <img src={food} alt="Innova Accounting" className="rounded-lg shadow-lg" />
+              <img src={food} alt="Innova Food & Drinks Screenshot" className="rounded-lg shadow-lg" />
             </div>
           </motion.div>
           {/* Contenido derecha */}
@@ -59,7 +59,7 @@ const Products = () => {
           >
             {/* Vector */}
             <div className="relative flex justify-center mb-3 lg:mb-10">
-              <img src={icon} alt="" />
+              <img src={icon} alt="Innova Food & Drinks Icon"/>
             </div>
             {/* Característica 1 */}
             <div className="flex items-start space-x-4 lg:mb-6">

@@ -19,7 +19,7 @@ const About = () => {
                     viewport={{ once: true, amount: 0.7 }}
                     className="md:w-1/2"
                 >
-                    <img src={aboutImg1} alt="" />
+                    <img src={aboutImg1} alt="Sobre nosotros 1" />
                 </motion.div>
                 <motion.div
                     variants={fadeIn("left", 0.3)}
@@ -44,7 +44,7 @@ const About = () => {
                     onViewportEnter={() => setIsInView(true)}
                     viewport={{ once: true, amount: 0.7 }}
                 >
-                    <img src={aboutImg2} alt="" />
+                    <img src={aboutImg2} alt="Sobre nosotros 2" />
                 </motion.div>
                 <motion.div
                     className="md:w-2/5 flex flex-col items-center md:items-start"

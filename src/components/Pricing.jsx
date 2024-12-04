@@ -98,7 +98,7 @@ const Pricing = () => {
                             {
                                 pkg.features.map((feature, idx) => 
                                     <li key={idx} className="flex gap-3 items-center">
-                                        <img src={feature.available ? greenIcon : redIcon} alt="" className="w-4 h-4"/>
+                                        <img src={feature.available ? greenIcon : redIcon} alt="Icon" className="w-4 h-4"/>
                                         {feature.feature}
                                     </li>
                                 )
