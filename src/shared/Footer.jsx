@@ -1,5 +1,5 @@
-import logo from "../assets/innova-blanco.png";
-import logotipo from "../assets/innova-logotipo.png";
+import logo from "../assets/innova-blanco.webp";
+import logotipo from "../assets/innova-logotipo.webp";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -13,9 +13,21 @@ const Footer = () => {
                 <div className="my-12 flex flex-col md:flex-row gap-10">
                     <div className="md:w-1/2 space-y-8 text-center md:text-left">
                         <a href="/" className="text-2xl font-semibold flex justify-center md:justify-start items-center space-x-3 text-primary">
-                            <img src={logo} alt="Innova Logo" className="w-10 inline-block" />
+                            <img 
+                                src={logo} 
+                                alt="Innova Logo" 
+                                className="w-10 inline-block" 
+                                width="40" 
+                                height="40" 
+                            />
                             <span className="text-white"></span>
-                            <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" />
+                            <img 
+                                src={logotipo} 
+                                alt="Innova Logotipo" 
+                                className="w-28 inline-block" 
+                                width="112" 
+                                height="40" 
+                            />
                             <span className="text-white"></span>
                         </a>
                         <p className="md:w-1/2 mx-auto md:mx-0">Innovación en cada línea de código</p>

@@ -45,7 +45,13 @@ const Products = () => {
               <span className="text-primary">Innova POS</span>
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
-              <img src={pos} alt="Innova POS Screenshot" className="rounded-lg shadow-lg" />
+              <img 
+                src={pos} 
+                alt="Innova POS Screenshot" 
+                className="rounded-lg shadow-lg" 
+                width="600" 
+                height="400" 
+              />
             </div>
           </motion.div>
           {/* Contenido izquierda */}
@@ -59,7 +65,12 @@ const Products = () => {
           >
             {/* Vector */}
             <div className="relative flex justify-center mb-3 lg:mb-10">
-              <img src={icon} alt="Innova POS Icon"/>
+              <img 
+                src={icon} 
+                alt="Innova POS Icon" 
+                width="50" 
+                height="50" 
+              />
             </div>
             {/* Característica 1 */}
             <div className="flex items-start space-x-4 lg:mb-6">

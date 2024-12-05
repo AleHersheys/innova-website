@@ -45,7 +45,13 @@ const Products = () => {
               <span className="text-[#A2B209]">Innova Food & Drinks</span>
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
-              <img src={food} alt="Innova Food & Drinks Screenshot" className="rounded-lg shadow-lg" />
+              <img 
+                src={food} 
+                alt="Innova Food & Drinks Screenshot" 
+                className="rounded-lg shadow-lg" 
+                width="600" 
+                height="400" 
+              />
             </div>
           </motion.div>
           {/* Contenido derecha */}
@@ -59,7 +65,12 @@ const Products = () => {
           >
             {/* Vector */}
             <div className="relative flex justify-center mb-3 lg:mb-10">
-              <img src={icon} alt="Innova Food & Drinks Icon"/>
+              <img 
+                src={icon} 
+                alt="Innova Food & Drinks Icon" 
+                width="50" 
+                height="50" 
+              />
             </div>
             {/* Característica 1 */}
             <div className="flex items-start space-x-4 lg:mb-6">
@@ -89,7 +100,8 @@ const Products = () => {
               <div>
                 <h4 className="lg:text-lg font-bold text-[#0F0E0E]">Actualizaciones gratuitas y constantes</h4>
                 <p className="text-sm text-[#2D2D2D] lg:my-2">
-                 Sistema que recibe soporte constante y se ajusta a tu negocio. Constantemente se mejora y se añaden nuevas funciones.</p>
+                 Sistema que recibe soporte constante y se ajusta a tu negocio. Constantemente se mejora y se añaden nuevas funciones.
+                </p>
                 <div className="border-t-2 lg:my-3"></div>
               </div>
             </div>

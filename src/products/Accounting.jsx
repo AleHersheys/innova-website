@@ -45,7 +45,13 @@ const Products = () => {
               <span className="text-[#228B22]">Innova Accounting</span>
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
-              <img src={accounting} alt="Innova Accounting Screenshot" className="rounded-lg shadow-lg" />
+              <img 
+                src={accounting} 
+                alt="Innova Accounting Screenshot" 
+                className="rounded-lg shadow-lg" 
+                width="600" 
+                height="400" 
+              />
             </div>
           </motion.div>
           {/* Contenido derecha */}
@@ -59,7 +65,12 @@ const Products = () => {
           >
             {/* Vector */}
             <div className="relative flex justify-center mb-3 lg:mb-10">
-              <img src={icon} alt="Innova Accounting Icon"/>
+              <img 
+                src={icon} 
+                alt="Innova Accounting Icon" 
+                width="50" 
+                height="50" 
+              />
             </div>
             {/* Característica 1 */}
             <div className="flex items-start space-x-4 lg:mb-6">
@@ -89,7 +100,7 @@ const Products = () => {
               <div>
                 <h4 className="lg:text-lg font-bold text-[#0F0E0E]">La mejor de las utilidades</h4>
                 <p className="text-sm text-[#2D2D2D] lg:my-2">
-                 Elaboración del libro de compras y ventras adaptadas a la normativa vigente. Verificación online del No. RIF de los clientes, proveedores y compañías a través del SENIAT.</p>
+                 Elaboración del libro de compras y ventas adaptadas a la normativa vigente. Verificación online del No. RIF de los clientes, proveedores y compañías a través del SENIAT.</p>
                 <div className="border-t-2 lg:my-3"></div>
               </div>
             </div>
