@@ -20,7 +20,10 @@ const Banner = ({ banner, heading, subheading, btn2 }) => {
                         src={banner} 
                         alt="Banner" 
                         className="lg:h-[386px] object-cover" 
-                        style={{ width: "100%", height: "auto" }}
+                        style={{ width: "100%", height: "auto" }} 
+                        loading="lazy" 
+                        width="600" 
+                        height="400"
                     />
                 </motion.div>
                 {/* CONTENIDO DEL BANNER */}

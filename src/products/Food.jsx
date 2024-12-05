@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import food from "../assets/product-5.jpg";
+import food from "../assets/product-5.webp";
 import icon from "../assets/icon-food.svg";
 
 const fadeIn = (direction = "up", delay = 0) => {

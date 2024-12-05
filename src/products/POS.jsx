@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import pos from "../assets/product-2.jpg";
+import pos from "../assets/product-2.webp";
 import icon from "../assets/icon-pos.svg";
 
 const fadeIn = (direction = "up", delay = 0) => {

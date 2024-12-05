@@ -1,6 +1,6 @@
-import Img1 from "../assets/BarberShop.jpg";
-import Img2 from "../assets/Service.jpg";
-import Img3 from "../assets/CarWash.jpg";
+import Img1 from "../assets/BarberShop.webp";
+import Img2 from "../assets/Service.webp";
+import Img3 from "../assets/CarWash.webp";
 import { FaScissors } from "react-icons/fa6";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
