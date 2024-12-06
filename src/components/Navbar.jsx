@@ -70,7 +70,10 @@ const Navbar = () => {
                     </div>
                     {/* Menú Hamburguesa */}
                     <div className="md:hidden">
-                        <button onClick={toggleMenu} className="text-white focus:outline-none focus:text-gray-300">
+                        <button onClick={toggleMenu} 
+                                className="text-white focus:outline-none focus:text-gray-300"
+                                aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+                        >
                             {isMenuOpen ? (
                                 <FaXmark className="w-6 h-6 text-primary"/>
                             ) : (
