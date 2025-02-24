@@ -115,7 +115,7 @@ const Products = () => {
               onViewportEnter={() => setIsInView(true)}
               viewport={{ once: true, amount: 0.7 }}
             >
-              <button className="btnPrimary" onClick={() => window.open("https://drive.google.com/drive/folders/1HHeE9ukQwF2WO1aWgcuP6-Lwejxk5TKV?usp=drive_link", "_blank")}>Descargar Demo</button>
+              <button className="btnPrimary" onClick={() => window.open("https://www.mediafire.com/file/kmyqq74rai5j9cj/Innova_Admin_2.1_%2528Demo%2529.rar/file", "_blank")}>Descargar Demo</button>
             </motion.div>
           </motion.div>
         </div>

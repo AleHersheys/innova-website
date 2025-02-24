@@ -65,7 +65,7 @@ const Footer = () => {
                                     <a href="https://www.innovaprosystem.com/terms-and-conditions/index.html" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Términos y condiciones</a>
                                 </li>
                                 <li>
-                                    <a href="https://drive.google.com/drive/u/1/folders/1r8bBTVna8xD-l2O0ee_eSiQe_2Jzyy_E" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Brochures</a>
+                                    <a href="https://www.mediafire.com/file/4uqmwlxjcnm5lhk/INN-BROCHURES.rar/file" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Brochures</a>
                                 </li>
                             </ul>
                         </div>
@@ -90,7 +90,7 @@ const Footer = () => {
                 </div>
                 <hr />
                 <div className="flex flex-col sm:flex-row gap-8 sm:items-center justify-between my-8">
-                    <p className="text-center sm:text-left sm:flex-1">Copyright © 2024 Innova ProSystem. Todos los derechos reservados.</p>
+                    <p className="text-center sm:text-left sm:flex-1">Copyright © 2025 Innova ProSystem. Todos los derechos reservados.</p>
                     <div className="flex justify-center sm:justify-end items-center space-x-5 sm:flex-1">
                         <FaFacebookF className="cursor-pointer hover:-translate-y-4 transition-all duration-300 text-2xl lg:text-3xl" onClick={() => window.open("https://www.facebook.com/share/14vDADVwJZ/?mibextid=LQQJ4d", "_blank")}/>
                         <FaXTwitter className="cursor-pointer hover:-translate-y-4 transition-all duration-300 text-2xl lg:text-4xl" onClick={() => window.open("https://x.com/innovaprosystem?s=21", "_blank")}/>

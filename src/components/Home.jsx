@@ -8,7 +8,6 @@ const Home = () => {
             <Banner banner={banner} 
                     heading={<>Potencia tu empresa con nosotros <FaLightbulb className="text-white inline-block ml-0.5 text-2xl lg:text-4xl" /></>}
                     subheading="Le ofrecemos a nuestros clientes los sistemas más avanzados utilizando tecnología de última, para solucionar cualquier tipo de problema." 
-                    btn1="Probar sistema de restaurantes" 
                     btn2="Conviértete en Partner"
             />
         </div>
