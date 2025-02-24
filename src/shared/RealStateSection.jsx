@@ -12,7 +12,7 @@ const items = [
     {count: "10+", label: "Años de experiencia en el mercado", image: <MdBusinessCenter />},
     {count: "98%", label: "Clientela satisfecha con nuestros servicios", image: <FaHandshake />},
     {count: "100%", label: "Compatibles con todas las impresoras fiscales del país", image: <TiPrinter />},
-    {count: "100%", label: "Certificados con facturación electrónica", image: <FaFileInvoice />},
+    {count: "100%", label: "Certificados con facturación electrónica de NOVUS", image: <FaFileInvoice />},
     {count: "100%", label: "Compatibles con pasarela de pago VPOS", image: <FaCreditCard />},
 ];
 
