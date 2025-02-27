@@ -1,7 +1,15 @@
-const Partners = () => {
+import NavbarPartners from "./NavbarPartners";
+import Form from "../shared/Form";
+import FooterPartners from "../shared/FooterPartners";
+
+const PartnersPage = () => {
   return (
-    <div>Partners</div>
+    <div>
+      <NavbarPartners/>
+      <Form/>
+      <FooterPartners/>
+    </div>
   );
 }
 
-export default Partners;
+export default PartnersPage;

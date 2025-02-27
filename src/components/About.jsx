@@ -8,7 +8,7 @@ const About = () => {
     const [isInView, setIsInView] = useState(false);
 
     return (
-        <div className="md:px-14 px-4 py-9 max-w-full mx-auto space-y-10 overflow-hidden">
+        <div className="md:px-14 px-4 py-9 max-w-full mx-auto space-y-10 overflow-hidden" id="about">
             {/* Contenido Sobre nosotros (Parte 1) */}
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
                 <motion.div
