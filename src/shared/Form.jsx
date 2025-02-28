@@ -257,7 +257,14 @@ const Form = () => {
     setObservacion("");
     setCharsLeft(300);
     setDireccion("");
-  };  
+  };
+
+  // Fuerza la animación en modo responsive
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsInView(true);
+    }
+  }, []);  
 
   return (
     <div className="gradientBg md:px-32 px-4 py-24">
