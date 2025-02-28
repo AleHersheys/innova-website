@@ -1,5 +1,5 @@
 {
-    "redirects": [
-      { "source": "/terms-and-conditions", "destination": "/terms-and-conditions/index.html", "permanent": true }
-    ]
-}  
+  "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

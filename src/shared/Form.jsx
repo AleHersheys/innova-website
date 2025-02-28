@@ -287,7 +287,7 @@ const Form = () => {
           viewport={{ once: true, amount: 0.7 }}
           className="w-full md:w-1/2 space-y-6"
         >
-          <h2 className="md:text-5xl text-3xl font-bold text-white leading-snug"><MdBusinessCenter /> PROGRAMA DE CAPTACIÓN DE PARTNERS</h2>
+          <h2 className="md:text-5xl text-3xl font-bold text-white leading-snug"><MdBusinessCenter /> REGISTRO DE PARTNERS</h2>
           <p className="text-white text-lg md:text-xl">Rellene la información requerida para la posibilidad de convertirte en uno de los Partners de los productos de Innova ProSystem.</p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
