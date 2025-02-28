@@ -189,7 +189,7 @@ const Form = () => {
     }
     setIsSubmitting(true);
   
-    // Preparar el mensaje consolidado (o los parámetros que necesites)
+    // Preparar el mensaje consolidado
     const message = `
       Cédula: ${prefijo}-${cedula}
       RIF: ${rif}
@@ -207,7 +207,7 @@ const Form = () => {
     `;
   
     const templateParams = {
-      to_name: "Info Innova ProSystem", // Puedes personalizarlo o dejarlo fijo
+      to_name: "Innova ProSystem", // Puedes personalizarlo o dejarlo fijo
       from_name: `${nombres} ${apellidos}`, // El remitente
       message: message,
     };

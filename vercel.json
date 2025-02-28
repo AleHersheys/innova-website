@@ -1,5 +1,8 @@
 {
-    "redirects": [
-      { "source": "/terms-and-conditions", "destination": "/terms-and-conditions/index.html", "permanent": true }
-    ]
-}  
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/terms-and-conditions", "destination": "/terms-and-conditions/index.html", "permanent": true }
+  ]
+}
