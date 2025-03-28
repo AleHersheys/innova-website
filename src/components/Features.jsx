@@ -20,7 +20,7 @@ const Features = () => {
                     className="lg:w-1/4"
                 >
                     <h3 className="text-3xl text-primary font-bold lg:w-1/2 mb-3">Nuestras especialidades</h3>
-                    <p className="text-base text-tartiary">Con precios asequibles, asesoramiento ideal, actualizaciones y soportes constante, siempre estará innovando en el mercado.</p>
+                    <p className="text-base text-tartiary">Con precios asequibles, asesoramiento ideal, actualizaciones y soportes constantes, siempre estará innovando en el mercado.</p>
                 </motion.div>
                 {/* Tarjetas */}
                 <div className="w-full lg:w-3/4">

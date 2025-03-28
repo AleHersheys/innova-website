@@ -4,11 +4,23 @@ import Img3 from "../assets/CarWash.webp";
 import { FaScissors } from "react-icons/fa6";
 import { FaRegPaperPlane } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Others = () => {
+    const [isInView, setIsInView] = useState(false);
+
   return (
     <section className="bg-white my-24 md:px-14 px-4 max-w-screen-2xl mx-auto">
-        <div className="max-w-screen-2xl container mx-auto px-5">
+        <motion.div 
+            variants={fadeIn("up", 0.2)} 
+            initial="hidden" 
+            animate={isInView ? "show" : "hidden"} 
+            onViewportEnter={() => setIsInView(true)}
+            viewport={{ once: true, amount: 0.5 }}
+            className="max-w-screen-2xl container mx-auto px-5"
+        >
             {/* Header */}
             <div className="text-center mb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-800">Nuestros sistemas web más recientes <span className="text-orange">para ti</span></h2>
@@ -41,7 +53,7 @@ const Others = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }

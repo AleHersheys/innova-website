@@ -22,11 +22,11 @@ const Footer = () => {
                             />
                             <span className="text-white"></span>
                             <img 
-                                src={logotipo} 
-                                alt="Innova Logotipo" 
-                                className="w-28 inline-block" 
-                                width="112" 
-                                height="40" 
+                                src={logotipo}
+                                alt="Innova Logotipo"
+                                className="w-28 inline-block"
+                                width="112"
+                                height="40"
                             />
                             <span className="text-white"></span>
                         </a>
@@ -42,17 +42,14 @@ const Footer = () => {
                             <h3 className="text-xl">General</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <Link to="home" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#home">Inicio</Link>
-                                </li>
-                                <li>
                                     <Link to="about" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#about">Sobre nosotros</Link>
                                 </li>
                                 <li>
                                     <Link to="products" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#products">Productos</Link>
                                 </li>
-                                {/* <li>
-                                    <Link to="pricing" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#pricing">Precios</Link>
-                                </li> */}
+                                <li>
+                                    <Link to="prices" smooth={true} duration={500} className="block hover:text-gray-300 cursor-pointer" href="#prices">Precios</Link>
+                                </li>
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">
@@ -72,9 +69,6 @@ const Footer = () => {
                         <div className="space-y-4 mt-5">
                             <h3 className="text-xl">Contactos</h3>
                             <ul className="space-y-3">
-                                {/* <li className="hover:text-gray-300">
-                                    <a href="tel:+582614176501" onClick={(e) => { if (!window.confirm('¿Desea llamar a este número?')) e.preventDefault(); }}>Oficina: +58 261-4176501</a> 
-                                </li> */}
                                 <li className="hover:text-gray-300">
                                     <a href="tel:+584146518865" onClick={(e) => { if (!window.confirm('¿Desea llamar a este número?')) e.preventDefault(); }}>Celular: +58 414-6518865</a>
                                 </li> 

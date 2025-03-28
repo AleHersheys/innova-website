@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import admin from "../assets/product-1.webp";
 import icon from "../assets/icon-admin.svg";
+import InnovaAdmin from "../assets/innova-admin.webp";
 
 const fadeIn = (direction = "up", delay = 0) => {
   return {
@@ -40,9 +41,15 @@ const Products = () => {
             onViewportEnter={() => setIsInView(true)}
             viewport={{ once: true, amount: 0.7 }}
           >
-            <h2 className="lg:text-4xl font-bold text-gray-800">
+            <h2 className="lg:text-4xl font-bold text-gray-800 text-center">
               Sistema administrativo local:<br></br>
-              <span className="text-primary">Innova Admin 2.1</span>
+              <img 
+                src={InnovaAdmin} 
+                alt="Innova Admin Logo" 
+                className="w-36 lg:w-40 mx-auto" 
+                width="144" 
+                height="48"             
+              />
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
               <img 

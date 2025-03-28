@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import food from "../assets/product-5.webp";
 import icon from "../assets/icon-food.svg";
+import InnovaFood from "../assets/innova-food-logo.webp";
 
 const fadeIn = (direction = "up", delay = 0) => {
   return {
@@ -40,9 +41,15 @@ const Products = () => {
             onViewportEnter={() => setIsInView(true)}
             viewport={{ once: true, amount: 0.7 }}
           >
-            <h2 className="lg:text-4xl font-bold text-gray-800">
+            <h2 className="lg:text-4xl font-bold text-gray-800 text-center">
               Sistema de restaurantes web:<br></br>
-              <span className="text-[#A2B209]">Innova Food & Drinks</span>
+            <img 
+              src={InnovaFood} 
+              alt="Innova Admin Logo" 
+              className="w-36 lg:w-40 mx-auto" 
+              width="144" 
+              height="48"             
+            />
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
               <img 

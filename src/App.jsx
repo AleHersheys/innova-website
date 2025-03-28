@@ -11,10 +11,11 @@ import POS from "./products/POS";
 import Accounting from "./products/Accounting";
 import PayRoll from "./products/PayRoll";
 import Food from "./products/Food";
-// import Pricing from "./components/Pricing";
+import Pricing from "./components/Pricing";
 import Footer from "./shared/Footer";
 import RealStateSection from "./shared/RealStateSection";
 import Others from "./products/Others";
+import LogoList from "./components/LogoList";
 
 function App() {
   const { hash } = useLocation();
@@ -38,6 +39,7 @@ function App() {
       <Home />
       <Features />
       <RealStateSection />
+      <LogoList/>
       <About />
       <Admin />
       <POS />
@@ -45,7 +47,7 @@ function App() {
       <PayRoll />
       <Food />
       <Others />
-      {/* <Pricing /> */}
+      <Pricing />
       <Newsletter />
       <Footer />
     </>

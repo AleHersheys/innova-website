@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import payroll from "../assets/product-4.webp";
 import icon from "../assets/icon-payroll.svg";
+import InnovaPayRoll from "../assets/innova-payroll-logo.webp";
 
 const fadeIn = (direction = "up", delay = 0) => {
   return {
@@ -40,9 +41,15 @@ const Products = () => {
             onViewportEnter={() => setIsInView(true)}
             viewport={{ once: true, amount: 0.7 }}
           >
-            <h2 className="lg:text-4xl font-bold text-gray-800">
+            <h2 className="lg:text-4xl font-bold text-gray-800 text-center">
               Sistema de nómina:<br></br>
-              <span className="text-[#F0301B]">Innova PayRoll</span>
+              <img 
+                src={InnovaPayRoll} 
+                alt="Innova PayRoll Logo" 
+                className="w-36 lg:w-40 mx-auto" 
+                width="144" 
+                height="48"             
+              />
             </h2>
             <div className="mt-4 lg:mt-10 flex justify-center lg:justify-start">
               <img 

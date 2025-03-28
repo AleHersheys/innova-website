@@ -1,6 +1,7 @@
 import { useState } from "react"; 
-import { HashLink } from "react-router-hash-link"; // Usamos HashLink para mantener el scroll suave
-import logo from "../assets/innova-logo.png"; 
+import { HashLink } from "react-router-hash-link";
+import logo from "../assets/innova-logo.png";
+import logotipo from "../assets/innova-logotipo-orange.webp"; 
 import { SiGooglemaps } from "react-icons/si";
 import { IoMenuSharp } from "react-icons/io5"; 
 import { FaXmark } from "react-icons/fa6"; 
@@ -13,8 +14,6 @@ const NavbarPartners = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    // Definimos una función para aplicar un offset al hacer scroll.
-    // Aquí se utiliza un offset de 100px para desktop y 80px para mobile.
     const scrollWithOffset = (el) => {
         const offset = window.innerWidth < 768 ? 80 : 100;
         const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset - offset;
@@ -22,10 +21,9 @@ const NavbarPartners = () => {
     };
 
     const navItems = [
-        { link: "Inicio", path: "home" },
         { link: "Sobre nosotros", path: "about" },
         { link: "Productos", path: "products" },
-        // { link: "Precios", path: "prices" },
+        { link: "Precios", path: "prices" },
     ];
 
     return (
@@ -35,7 +33,7 @@ const NavbarPartners = () => {
                     <div className="flex space-x-14 items-center">
                         <HashLink smooth to="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
                             <img src={logo} alt="Innova Logo" className="w-10 inline-block items-center" />
-                            <span>Innova ProSystem</span>
+                            <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" width="112" height="40" />
                         </HashLink>
                         {/* Mostrando navItems con .map() */}
                         <ul className="md:flex space-x-12 hidden">
