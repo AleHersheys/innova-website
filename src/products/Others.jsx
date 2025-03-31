@@ -18,7 +18,7 @@ const Others = () => {
             initial="hidden" 
             animate={isInView ? "show" : "hidden"} 
             onViewportEnter={() => setIsInView(true)}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="max-w-screen-2xl container mx-auto px-5"
         >
             {/* Header */}

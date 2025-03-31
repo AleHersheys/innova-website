@@ -1,5 +1,4 @@
 import { useState } from "react"; 
-import { HashLink } from "react-router-hash-link";
 import logo from "../assets/innova-logo.png";
 import logotipo from "../assets/innova-logotipo-orange.webp"; 
 import { SiGooglemaps } from "react-icons/si";
@@ -12,41 +11,34 @@ const NavbarPartners = () => {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    };
-
-    const scrollWithOffset = (el) => {
-        const offset = window.innerWidth < 768 ? 80 : 100;
-        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset - offset;
-        window.scrollTo({ top: yCoordinate, behavior: "smooth" });
-    };
+    }
 
     const navItems = [
-        { link: "Sobre nosotros", path: "about" },
-        { link: "Productos", path: "products" },
-        { link: "Precios", path: "prices" },
+        { link: "Sobre nosotros", path: "/#about" },
+        { link: "Productos", path: "/#products" },
+        { link: "Precios", path: "/#prices" },
+        { link: "Contactos", path: "/#contact" },
     ];
 
     return (
         <>
-            <nav className="bg-white md:px-14 p-4 w-full border-b mx-auto text-primary fixed top-0 right-0 left-0">
-                <div className="text-lg container mx-auto flex justify-between items-center font-medium">
+            <nav className="bg-white md:px-14 p-4 w-full border-b mx-auto text-primary fixed top-0 right-0 left-0 z-50">
+                <div className="text-lg containter mx-auto flex justify-between items-center font-medium">
                     <div className="flex space-x-14 items-center">
-                        <HashLink smooth to="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
+                        <a href="/" className="text-2xl font-semibold flex items-center space-x-3 text-primary">
                             <img src={logo} alt="Innova Logo" className="w-10 inline-block items-center" />
                             <img src={logotipo} alt="Innova Logotipo" className="w-28 inline-block" width="112" height="40" />
-                        </HashLink>
+                        </a>
                         {/* Mostrando navItems con .map() */}
                         <ul className="md:flex space-x-12 hidden">
                             {navItems.map(({ link, path }) => (
                                 <li key={link}>
-                                    <HashLink 
-                                        smooth 
-                                        to={`/#${path}`} 
-                                        scroll={scrollWithOffset}
+                                    <a 
+                                        href={path} 
                                         className="block hover:text-gray-300 cursor-pointer"
                                     >
                                         {link}
-                                    </HashLink>
+                                    </a>
                                 </li>
                             ))}
                         </ul>
@@ -72,10 +64,9 @@ const NavbarPartners = () => {
                     </div>
                     {/* Menú Hamburguesa */}
                     <div className="md:hidden">
-                        <button 
-                            onClick={toggleMenu} 
-                            className="text-white focus:outline-none focus:text-gray-300"
-                            aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+                        <button onClick={toggleMenu} 
+                                className="text-white focus:outline-none focus:text-gray-300"
+                                aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
                         >
                             {isMenuOpen ? (
                                 <FaXmark className="w-6 h-6 text-primary"/>
@@ -87,25 +78,23 @@ const NavbarPartners = () => {
                 </div>
             </nav>
             {/* Ítems del Navbar para dispositivos móviles */}
-            <div className={`space-y-4 px-4 pt-24 pb-5 bg-orange text-xl ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
+            <div className={`space-y-4 px-4 pt-24 pb-5 border-b border-secondary bg-orange text-xl z-50 ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                 <ul className="space-y-4">
                     {navItems.map(({ link, path }) => (
                         <li key={link}>
-                            <HashLink 
-                                smooth 
-                                to={`/#${path}`} 
-                                scroll={scrollWithOffset}
+                            <a 
+                                href={path} 
                                 className="block text-white hover:text-gray-300" 
                                 onClick={toggleMenu}
                             >
                                 {link}
-                            </HashLink>
+                            </a>
                         </li>
                     ))}
                 </ul>
             </div>
         </>
     );
-};
+}
 
 export default NavbarPartners;

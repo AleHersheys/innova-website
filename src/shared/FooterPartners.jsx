@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Cambiado de "react-scroll" a "react-router-dom"
+import { Link } from "react-router-dom";
 
 const FooterPartners = () => {
     return (
@@ -64,16 +64,14 @@ const FooterPartners = () => {
                                         Productos
                                     </Link>
                                 </li>
-                                {/*
                                 <li>
                                     <Link 
-                                        to="/#pricing" 
+                                        to="/#prices" 
                                         className="block hover:text-gray-300 cursor-pointer"
                                     >
                                         Precios
                                     </Link>
                                 </li>
-                                */}
                             </ul>
                         </div>
                         <div className="space-y-4 mt-5">

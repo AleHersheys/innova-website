@@ -63,7 +63,7 @@ const Pricing = () => {
             initial="hidden" 
             animate={isInView ? "show" : "hidden"} 
             onViewportEnter={() => setIsInView(true)}
-            viewport={{ once: true, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
             className="md:px-14 p-4 max-w-screen-xl mx-auto py-10" id="prices"
         >
             <div className="text-center">
