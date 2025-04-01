@@ -18,4 +18,4 @@ nav {
 
 button:disabled:hover {
     @apply bg-secondary;
-  }  
+}
