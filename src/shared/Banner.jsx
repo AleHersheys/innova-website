@@ -91,10 +91,10 @@ const Banner = ({ banners }) => {
             {currentIndex === 0 && (
               <FaLightbulb className="text-white inline-block ml-0.5 text-2xl lg:text-4xl" />
             )}
-            {currentIndex === 1 && (
+            {/* {currentIndex === 1 && (
               <PiCertificateFill className="text-white inline-block ml-0.5 text-2xl lg:text-4xl" />
-            )}
-            {currentIndex === 2 && (
+            )} */}
+            {currentIndex === 1 && (
               <MdRestaurant className="text-white inline-block ml-0.5 text-2xl lg:text-4xl" />
             )}
           </h2>
