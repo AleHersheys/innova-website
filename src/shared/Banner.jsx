@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft, FaArrowRight, FaLightbulb } from "react-icons/fa";
 import { MdRestaurant } from "react-icons/md";
-import { PiCertificateFill } from "react-icons/pi";
+//import { PiCertificateFill } from "react-icons/pi";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -34,11 +34,11 @@ const Banner = ({ banners }) => {
   const handleButtonClick = () => {
     if (currentIndex === 1) {
       window.open(
-        "https://declaraciones.seniat.gob.ve/portal/page/portal/MANEJADOR_CONTENIDO_SENIAT/03TRIBUTOS/3-5.html",
+        "https://food.innovaprosystem.com",
         "_blank"
       );
     } else if (currentIndex === 2) {
-      window.open("https://food.innovaprosystem.com", "_blank");
+      window.open("", "_blank");
     } else {
       navigate("/partners");
     }
