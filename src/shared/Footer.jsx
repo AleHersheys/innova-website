@@ -56,7 +56,7 @@ const Footer = () => {
                             <h3 className="text-xl">Ayuda</h3>
                             <ul className="space-y-3">
                                 <li>
-                                    <a href="https://help.innovaprosystem.com" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Innova Help Desk</a>
+                                    <a href="https://innova-help.freshdesk.com/support/home" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Innova Help Desk</a>
                                 </li>
                                 <li>
                                     <a href="https://www.innovaprosystem.com/terms-and-conditions/index.html" target="_blank" rel="noopener noreferrer" className="block hover:text-gray-300 cursor-pointer">Términos y condiciones</a>

@@ -79,7 +79,7 @@ const FooterPartners = () => {
                             <ul className="space-y-3">
                                 <li>
                                     <a 
-                                        href="https://help.innovaprosystem.com" 
+                                        href="https://innova-help.freshdesk.com/support/home" 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
                                         className="block hover:text-gray-300 cursor-pointer"

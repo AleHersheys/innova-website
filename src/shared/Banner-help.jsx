@@ -37,7 +37,7 @@ const Banner = ({ banner, heading, subheading, btn1, btn2 }) => {
                     <h2 className="md:text-7xl text-4xl font-bold text-white mb-6 leading-relaxed">{heading}</h2>
                     <p className="text-white text-2xl mb-8">{subheading}</p>
                     <div className="flex flex-col md:flex-row items-center space-y-4 md:space-x-5 md:space-y-0">
-                        <button className="btnPrimary" onClick={() => window.open("https://help.innovaprosystem.com", "_blank")}>{btn1}</button>
+                        <button className="btnPrimary" onClick={() => window.open("https://innova-help.freshdesk.com/support/home", "_blank")}>{btn1}</button>
                         <button className="btnPrimary" onClick={() => window.open("https://www.innovaprosystem.com/terms-and-conditions/index.html", "_blank")}>{btn2}</button>
                     </div>
                 </motion.div>
